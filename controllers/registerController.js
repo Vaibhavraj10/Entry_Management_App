@@ -309,7 +309,7 @@ exports.send_entry_detail = async function(req, res) {
       await mailer.sendEmail(config.SENDER_EMAIL, req.body.hostEmail, 'New visitor!', html);
       console.log("Email sent");
 
-      const from = config.SENDER_NUMBER;
+      //const from = config.SENDER_NUMBER;
       const to = req.body.hostPhone;
       const text = 'Hi ' + req.body.hostName + 
       '! There is a new visitor in the office!' +
@@ -327,7 +327,7 @@ exports.send_entry_detail = async function(req, res) {
       url: 'https://global.datagenit.com/API/sms-api.php',
       qs: 
       { auth: config.SMS_ID,
-        senderid: 'TXTSMS',
+        senderid: config.SMS_SENDER_ID,
         msisdn: to,
         message: text },
         headers: 
