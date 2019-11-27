@@ -1,0 +1,29 @@
+{
+  "name": "VISITOR_APP",
+  "version": "1.0.0",
+  "description": "\"Entry management app\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error:no test specified\\\" && exit1\"",
+    "start": "nodemon app.js"
+  },
+  "author": "Vaibhav",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "connect-mongo": "^3.1.2",
+    "ejs": "^3.0.1",
+    "express": "^4.16.4",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^4.9.8",
+    "mongoose-auto-increment": "^5.0.1",
+    "nodemailer": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "twilio": "^3.37.1"
+  }
+}

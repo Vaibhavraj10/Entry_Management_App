@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registration Form | Office Way!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css">
+
+		
+		<link rel="stylesheet" href="css/checkin/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+            <form action="/checkin" method="post" id="wizard" class="myform">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="css/checkin/step-0.png" class="step1" alt="">
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<p>Please fill with Visitor's details</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" name="visitorName" placeholder="Name" class="form-control">
+								</div>
+							</div>
+						
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="email" name="visitorEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your Email" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="visitorPhone" placeholder="Phone Number" class="form-control">
+								</div>
+							</div>
+							
+							<div class="form-row">
+								<div class="form-holder">
+									<span>Checkin Time
+									<input type="time" name="visitorCheckin" placeholder="Checkin Time" class="form-control">
+								    </span>
+								</div>
+								<div class="form-holder">
+									<span>Checkout Time
+									<input type="time" name="visitorCheckout" placeholder="Checkout Time" class="form-control">
+								    </span>
+								</div>
+							</div>
+						<!--	<button href="/home"> Return to home? </button> -->
+						</div>
+					</div>
+                </section>
+
+				<!-- SECTION 2 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="css/checkin/step-1.png" class="step2" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<p>Please fill with Host's info</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" name="hostName" placeholder="Name" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+							        <input type="email" name="hostEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" name="hostPhone" placeholder="Phone Number" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="css/checkin/step3.gif" class="step3" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<p>Confirmation</p>
+							
+							<div class="form-row">
+								<p>A confirmation sms and email would be sent to host. Are you ready to submit?</p>
+							</div>
+						</div>
+					</div>
+                </section>
+            </form>
+		</div>
+
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- JQUERY STEP  -->
+		<script src="js/checkin/jquery.steps.js"></script>
+		<script src="js/checkin/main.js"></script>
+		
+</body>
+</html>
